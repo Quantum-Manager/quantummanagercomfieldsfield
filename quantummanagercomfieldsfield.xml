@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="fields" method="upgrade">
+	<name>PLG_QUANTUMMANAGERCOMFIELDSFIELD</name>
+	<creationDate>23.09.2020</creationDate>
+	<author>Tsymbal</author>
+	<authorEmail>cymbal@delo-design.ru</authorEmail>
+	<authorUrl>https://www.norrnext.com</authorUrl>
+	<copyright>Copyright © 2019 Delo Design &amp; NorrNext. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see license.txt</license>
+	<version>1.0</version>
+	<description>PLG_QUANTUMMANAGERCOMFIELDSFIELD_XML_DESCRIPTION</description>
+
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_fields_quantummanagercomfieldsfield.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_fields_quantummanagercomfieldsfield.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_fields_quantummanagercomfieldsfield.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_fields_quantummanagercomfieldsfield.sys.ini</language>
+	</languages>
+
+	<files>
+		<filename plugin="quantummanagercomfieldsfield">quantummanagercomfieldsfield.php</filename>
+		<folder>language</folder>
+		<folder>params</folder>
+		<folder>fields</folder>
+	</files>
+
+</extension>

@@ -9,8 +9,7 @@
 	<license>GNU General Public License version 3 or later; see license.txt</license>
 	<version>1.0</version>
 	<description>PLG_QUANTUMMANAGERCOMFIELDSFIELD_XML_DESCRIPTION</description>
-
-
+	<namespace path="src">Joomla\Plugin\Fields\QuantumManagerComFieldsField\Extension</namespace>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.plg_fields_quantummanagercomfieldsfield.ini</language>
 		<language tag="en-GB">en-GB/en-GB.plg_fields_quantummanagercomfieldsfield.sys.ini</language>
@@ -19,7 +18,8 @@
 	</languages>
 
 	<files>
-		<filename plugin="quantummanagercomfieldsfield">quantummanagercomfieldsfield.php</filename>
+		<folder>services</folder>
+		<folder plugin="quantummanagercomfieldsfield">src</folder>
 		<folder>language</folder>
 		<folder>params</folder>
 		<folder>fields</folder>

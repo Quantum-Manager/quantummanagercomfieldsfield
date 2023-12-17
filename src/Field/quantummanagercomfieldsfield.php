@@ -1,4 +1,5 @@
-<?php
+<?php namespace Joomla\Plugin\Fields\QuantumManagerComFieldsField\Field;
+
 /**
  * @package    quantummanager
  * @author     Dmitry Tsymbal <cymbal@delo-design.ru>
@@ -7,21 +8,15 @@
  * @link       https://www.norrnext.com
  */
 
-use Joomla\CMS\Filter\OutputFilter;
-use Joomla\CMS\Language\Text;
-use Joomla\CMS\Factory;
-
 defined('_JEXEC') or die;
 
-JLoader::import( 'components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTRATOR );
-JLoader::register('QuantummanagerHelper', JPATH_SITE . '/administrator/components/com_quantummanager/helpers/quantummanager.php');
-JLoader::register('JFormFieldQuantumuploadimage', JPATH_ROOT . '/libraries/lib_fields/fields/quantumuploadimage/quantumuploadimage.php');
-
+use Exception;
+use Joomla\CMS\Factory;
 
 /**
- * Class JFormFieldQuantummanagercomfieldsfield
+ * Class QuantumManagerComFieldsField
  */
-class JFormFieldQuantummanagercomfieldsfield extends JFormFieldQuantumuploadimage
+class QuantumManagerComFieldsField extends JFormFieldQuantumuploadimage
 {
 
 	/**
@@ -48,7 +43,6 @@ class JFormFieldQuantummanagercomfieldsfield extends JFormFieldQuantumuploadimag
 
             if($this->copy)
             {
-                JLoader::register('QuantummanagerLibs', JPATH_SITE . '/administrator/components/com_quantummanager/helpers/quantumlibs.php');
 
                 QuantummanagerLibs::includes([
                     'utils',

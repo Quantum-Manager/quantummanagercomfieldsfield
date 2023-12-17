@@ -1,4 +1,5 @@
-<?php
+<?php namespace Joomla\Plugin\Fields\QuantumManagerComFieldsField\Extension;
+
 /**
  * @package    quantummanager
  * @author     Dmitry Tsymbal <cymbal@delo-design.ru>
@@ -7,27 +8,20 @@
  * @link       https://www.norrnext.com
  */
 
-use Joomla\CMS\Application\CMSApplication;
 use Joomla\CMS\Factory;
-use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
-use Joomla\CMS\Plugin\CMSPlugin;
-use Joomla\CMS\Plugin\PluginHelper;
-use Joomla\CMS\Uri\Uri;
-use Joomla\Database\DatabaseDriver;
+use Joomla\Component\Fields\Administrator\Plugin\FieldsPlugin;
 
 defined('_JEXEC') or die;
 
-JLoader::import( 'components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTRATOR );
-
 
 /**
- * Quantummanagercomfieldsfield plugin.
+ * QuantumManagerComFieldsField plugin.
  *
  * @package   quantummanagerfield
  * @since     1.0.0
  */
-class plgFieldsQuantummanagercomfieldsfield extends FieldsPlugin
+class QuantumManagerComFieldsField extends FieldsPlugin
 {
 
 	/**
